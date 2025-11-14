@@ -1,6 +1,8 @@
 package net.Jace007.JMWP;
 
+import net.Jace007.JMWP.block.ModBlocks;
 import net.Jace007.JMWP.item.ModItems;
+import net.neoforged.bus.EventBus;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -36,6 +38,7 @@ public class Jmwp {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
