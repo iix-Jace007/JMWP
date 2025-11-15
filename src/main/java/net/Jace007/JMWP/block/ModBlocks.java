@@ -2,6 +2,7 @@ package net.Jace007.JMWP.block;
 
 import net.Jace007.JMWP.Jmwp;
 import net.Jace007.JMWP.block.custom.ModFlammableRotatedPillarBlock;
+import net.Jace007.JMWP.block.custom.ModLeavesEx;
 import net.Jace007.JMWP.block.custom.ModPlanks;
 import net.Jace007.JMWP.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -36,34 +37,57 @@ public class ModBlocks {
             () -> new ModPlanks(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PLANKS)));
 
                     // Slabs
-    public static final DeferredBlock<Block> ABADON_SLAB = registerBlock("abadon_slab",
+    public static final DeferredBlock<SlabBlock> ABADON_SLAB = registerBlock("abadon_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
+    public static final DeferredBlock<SlabBlock> ABADON_LOG_SLAB = registerBlock("abadon_log_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
+    public static final DeferredBlock<SlabBlock> ABADON_STRIPPED_SLAB = registerBlock("abadon_stripped_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
 
                     // Stairs
-    public static final DeferredBlock<Block> ABADON_STAIRS = registerBlock("abadon_stairs",
-            () -> new StairBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_STAIRS)));
+    public static final DeferredBlock<StairBlock> ABADON_STAIRS = registerBlock("abadon_stairs",
+            () -> new StairBlock(ModBlocks.ABADON_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_STAIRS)));
+    public static final DeferredBlock<StairBlock> ABADON_LOG_STAIRS = registerBlock("abadon_log_stairs",
+            () -> new StairBlock(ModBlocks.ABADON_LOG.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_STAIRS)));
+    public static final DeferredBlock<StairBlock> ABADON_STRIPPED_WOOD_STAIRS = registerBlock("abadon_stripped_wood_stairs",
+            () -> new StairBlock(ModBlocks.ABADON_STRIPPED_WOOD.get().defaultBlockState(),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_STAIRS)));
 
                     // Fences
-    public static final DeferredBlock<Block> ABADON_FENCE = registerBlock("abadon_fence",
+    public static final DeferredBlock<FenceBlock> ABADON_FENCE = registerBlock("abadon_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE)));
-    public static final DeferredBlock<Block> ABADON_LOG_FENCE = registerBlock("abadon_log_fence",
+    public static final DeferredBlock<FenceBlock> ABADON_LOG_FENCE = registerBlock("abadon_log_fence",
             () -> new FenceBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE)));
 
                     // Fence Gates
-    public static final DeferredBlock<Block> ABADON_FENCE_GATE = registerBlock("abadon_fence_gate",
+    public static final DeferredBlock<FenceGateBlock> ABADON_FENCE_GATE = registerBlock("abadon_fence_gate",
+            () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE_GATE)));
+    public static final DeferredBlock<FenceGateBlock> ABADON_LOG_FENCE_GATE = registerBlock("abadon_log_fence_gate",
             () -> new FenceGateBlock(WoodType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_FENCE_GATE)));
 
                     // Doors
-    public static final DeferredBlock<Block> ABADON_DOOR = registerBlock("abadon_door",
-            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR)));
-    public static final DeferredBlock<Block> ABADON_TRAPDOOR = registerBlock("abadon_trapdoor",
-            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR)));
+    public static final DeferredBlock<DoorBlock> ABADON_DOOR = registerBlock("abadon_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).noOcclusion()));
+    public static final DeferredBlock<TrapDoorBlock> ABADON_TRAPDOOR = registerBlock("abadon_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).noOcclusion()));
+    public static final DeferredBlock<TrapDoorBlock> ABADON_LOG_TRAPDOOR = registerBlock("abadon_log_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_TRAPDOOR).noOcclusion()));
 
                     // Redstone Stuff
-    public static final DeferredBlock<Block> ABADON_BUTTON = registerBlock("abadon_button",
-            () -> new ButtonBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON)));
-    public static final DeferredBlock<Block> ABADON_PRESSUREPLATE = registerBlock("abadon_pressureplate",
+    public static final DeferredBlock<ButtonBlock> ABADON_BUTTON = registerBlock("abadon_button",
+            () -> new ButtonBlock(BlockSetType.OAK, 15, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON).noCollission()));
+    public static final DeferredBlock<ButtonBlock> ABADON_LOG_BUTTON = registerBlock("abadon_log_button",
+            () -> new ButtonBlock(BlockSetType.OAK, 15, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_BUTTON).noCollission()));
+    public static final DeferredBlock<PressurePlateBlock> ABADON_PRESSUREPLATE = registerBlock("abadon_pressureplate",
             () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_PRESSURE_PLATE)));
+
+                    // Saplings & Leaves
+    public static final DeferredBlock<LeavesBlock> ABADON_LEAVES = registerBlock("abadon_leaves",
+            () -> new ModLeavesEx(, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)));
+    public static final DeferredBlock<SaplingBlock> ABADON_SAPLING = registerBlock("abadon_sapling",
+            () -> new SaplingBlock(, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
                     // End of Abadon Woodset
 

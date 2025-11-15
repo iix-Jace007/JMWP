@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building_blocks",
+  "ingredients": [
+    {
+      "item": "jacesmegawoodp:abadon_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "jacesmegawoodp:abadon_planks"
+  }
+}

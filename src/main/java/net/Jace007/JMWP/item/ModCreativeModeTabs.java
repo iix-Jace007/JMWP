@@ -1,6 +1,7 @@
 package net.Jace007.JMWP.item;
 
 import net.Jace007.JMWP.Jmwp;
+import net.Jace007.JMWP.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,6 +19,13 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.ABADON_STICK.get()))
                     .title(Component.translatable("creativetab.jacesmegawoodp.jaces_wood"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.ABADON_SAPLING);
+                        output.accept(ModBlocks.ABADON_LEAVES);
+                        output.accept(ModBlocks.ABADON_LOG);
+                        output.accept(ModBlocks.ABADON_WOOD);
+                        output.accept(ModBlocks.ABADON_STRIPPED_LOG);
+                        output.accept(ModBlocks.ABADON_STRIPPED_WOOD);
+
                         output.accept(ModItems.ABADON_STICK);
 
                     }).build());

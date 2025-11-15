@@ -1,9 +1,40 @@
 {
+  "block.jacesmegawoodp.abadon_log": "Abadon Log",
+
+  "block.jacesmegawoodp.abadon_wood": "Abadon Wood",
+
+  "block.jacesmegawoodp.abadon_stripped_log": "Abadon Stripped Log",
+
+  "block.jacesmegawoodp.abadon_stripped_wood": "Abadon Stripped Wood",
+
+  "block.jacesmegawoodp.abadon_planks": "Abadon Planks",
+
+  "block.jacesmegawoodp.abadon_slab": "Abadon Slab",
+  "block.jacesmegawoodp.abadon_log_slab": "Abadon Log Slab",
+  "block.jacesmegawoodp.abadon_stripped_slab": "Abadon Stripped Slab",
+
+  "block.jacesmegawoodp.abadon_stairs": "Abadon Stairs",
+  "block.jacesmegawoodp.abadon_log_stairs": "Abadon Log Stairs",
+  "block.jacesmegawoodp.abadon_stripped_wood_stairs": "Abadon Stripped Wood Stairs",
+
+  "block.jacesmegawoodp.abadon_fence": "Abadon Fence",
+  "block.jacesmegawoodp.abadon_log_fence": "Abadon Log Fence",
+
+  "block.jacesmegawoodp.abadon_fence_gate": "Abadon Fence Gate",
+  "block.jacesmegawoodp.abadon_log_fence_gate": "Abadon Log Fence Gate",
+
+  "block.jacesmegawoodp.abadon_door": "Abadon Door",
+  "block.jacesmegawoodp.abadon_trapdoor": "Abadon Trapdoor",
+  "block.jacesmegawoodp.abadon_log_trapdoor": "Abadon Log Trapdoor",
+
+  "block.jacesmegawoodp.abadon_button": "Abadon Button",
+  "block.jacesmegawoodp.abadon_log_button": "Abadon Log Button",
+
+  "block.jacesmegawoodp.abadon_pressureplate": "Abadon Pressure Plate",
 
   "item.jacesmegawoodp.abadon_stick": "Abadon Stick",
   "item.jacesmegawoodp.abu_stick": "Abu Stick",
 
-  "block.jacesmegawoodp.abadon_log": "Abadon Log",
 
   "creativetab.jacesmegawoodp.jaces_wood": "Jace's Wood"
 
