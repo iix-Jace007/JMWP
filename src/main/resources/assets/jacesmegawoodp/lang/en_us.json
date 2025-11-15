@@ -1,6 +1,10 @@
 {
 
   "item.jacesmegawoodp.abadon_stick": "Abadon Stick",
-  "item.jacesmegawoodp.abu_stick": "Abu Stick"
+  "item.jacesmegawoodp.abu_stick": "Abu Stick",
+
+  "block.jacesmegawoodp.abadon_log": "Abadon Log",
+
+  "creativetab.jacesmegawoodp.jaces_wood": "Jace's Wood"
 
 }
