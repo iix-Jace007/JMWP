@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_fence",
+  "key": {
+    "S": {
+      "item": "jacesmegawoodp:abadon_stick"
+    },
+    "L": {
+      "item": "jacesmegawoodp:abadon_log"
+    }
+  },
+  "pattern": [
+    "LSL",
+    "LSL"
+  ],
+  "result": {
+    "count": 3,
+    "id": "jacesmegawoodp:abadon_log_fence"
+  }
+}

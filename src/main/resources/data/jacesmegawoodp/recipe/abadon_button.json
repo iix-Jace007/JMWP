@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    {
+      "item": "jacesmegawoodp:abadon_button"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "jacesmegawoodp:abadon_button"
+  }
+}

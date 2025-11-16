@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_trapdoor",
+  "key": {
+    "L": {
+      "item": "jacesmegawoodp:abadon_log"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LLL"
+  ],
+  "result": {
+    "count": 2,
+    "id": "jacesmegawoodp:abadon_log_trapdoor"
+  }
+}

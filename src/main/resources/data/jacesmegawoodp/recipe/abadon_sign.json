@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "wooden_sign",
+  "key": {
+    "P": {
+      "item": "jacesmegawoodp:abadon_planks"
+    },
+    "S": {
+      "item": "jacesmegawoodp:abadon_stick"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PPP",
+    " S "
+  ],
+  "result": {
+    "count": 3,
+    "id": "jacesmegawoodp:abadon_sign"
+  }
+}

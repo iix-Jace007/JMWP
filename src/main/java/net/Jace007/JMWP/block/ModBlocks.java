@@ -27,7 +27,7 @@ public class ModBlocks {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> ABADON_WOOD = registerBlock("abadon_wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_WOOD)));
-    public static final DeferredBlock<Block> ABADON_STRIPPED_LOG = registerBlock("abadon_stripped_log",
+    public static final DeferredBlock<Block> ABADON_STRIPPED_LOG = registerBlock("abadon_stripped_log.json",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_LOG)));
     public static final DeferredBlock<Block> ABADON_STRIPPED_WOOD = registerBlock("abadon_stripped_Wood",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STRIPPED_OAK_WOOD)));
@@ -41,7 +41,7 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
     public static final DeferredBlock<SlabBlock> ABADON_LOG_SLAB = registerBlock("abadon_log_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
-    public static final DeferredBlock<SlabBlock> ABADON_STRIPPED_SLAB = registerBlock("abadon_stripped_slab",
+    public static final DeferredBlock<SlabBlock> ABADON_STRIPPED_WOOD_SLAB = registerBlock("abadon_stripped_wood_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SLAB)));
 
                     // Stairs
@@ -89,7 +89,7 @@ public class ModBlocks {
     public static final DeferredBlock<SaplingBlock> ABADON_SAPLING = registerBlock("abadon_sapling",
             () -> new SaplingBlock(, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
 
-                    // End of Abadon Woodset
+                    // End of Abadon Woodset | Notes: Needs Signs, Boat, and Chest Boat
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
